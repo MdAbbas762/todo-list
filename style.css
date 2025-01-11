@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    box-sizing: border-box;
+}
+ 
+html, body{
+    width: 100%;
+}
+
+body{
+    background-color: #23262dde;
+}
+
+.container{
+    width: 34vw;
+    background-color: white;
+    padding: 50px 0 20px 30px;
+    margin: 100px auto 20px;
+    /* -> To center container instead of using display:flex; property. */
+    border-radius: 10px;
+}
+
+.top{
+    display: flex;
+}
+
+.top h2{
+    color: #011d4c;
+    margin-right: 8px;
+}
+
+.top img{
+    width: 40px;
+}
+
+.inputField{
+    position: relative;
+}
+
+.inputField input{
+    height: 55px;
+    width: 550px;
+    font-size: 14px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    padding: 20px;
+    background-color: rgba(216, 216, 216, 0.433);
+    border: none;
+    border-radius: 40px;
+}
+
+.inputField button{
+    height: 53.5px;
+    width: 120px;
+    color: white;
+    background-color: rgb(255, 170, 59);
+    font-size: 16px;
+    border: none;
+    border-radius: 40px;
+    position: absolute;
+    top: 20.5%;
+    right: 11.8%;
+    cursor: pointer;
+}
+
+.listContainer li{
+    list-style-type: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.listContainer li::before{
+    content: '';
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url("images/unchecked.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 12px;
+    left: 8px;
+}
+
+.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+li.checked::before{
+    background-image: url("images/checked.png");
+}
+
+.listContainer li span{
+    position: absolute;
+    right: 67px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.listContainer li span:hover{
+    background-color: #edeef0;
+}
+
+body::-webkit-slider-thumb{
+    display: none;
+}
