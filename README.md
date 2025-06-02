@@ -6,7 +6,7 @@ The purpose of this project is to:<br>
 - Serve as a foundational project for beginners to understand the workflow of creating, editing, and removing tasks in a web application.<br>
 <br>
 Features:<br>
-- Add new tasks to the list.<br>
-- Mark tasks as complete or incomplete.<br>
-- Delete tasks from the list.<br>
-- Persistent storage of tasks using browser local storage.<br>
+1. Add new tasks to the list.<br>
+2. Mark tasks as complete or incomplete.<br>
+3. Delete tasks from the list.<br>
+4. Persistent storage of tasks using browser local storage.<br>
